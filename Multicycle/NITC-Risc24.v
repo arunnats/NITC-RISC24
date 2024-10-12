@@ -1,4 +1,4 @@
-module test1(	input clk, reset,
+module NITC-Risc24(	input clk, reset,
 					output [15:0] pc,
 					output [4:0] state,
 					output [15:0] r0,r1,r2,r3,r4,r5,r6,r7,
