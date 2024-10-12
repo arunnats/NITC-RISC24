@@ -1,7 +1,7 @@
-# NITC-RISC18 Multicycle Processor
+# NITC-RISC24 Multicycle Processor
 
 ## Objective
-To develop a **16-bit multicycle processor**, **NITC-RISC18**, which features:
+To develop a **16-bit multicycle processor**, **NITC-RISC24**, which features:
 - 8 general-purpose registers (R0-R7)
 - A **Condition Code register** to store carry and zero flags
 - **R0** as the program counter (PC)
