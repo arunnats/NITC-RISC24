@@ -42,7 +42,7 @@ module testbench();
         $display("r4 = %h, r5 = %h, r6 = %h, r7 = %h", r4, r5, r6, r7);
         $display("PC = %h, ADR = %h, WriteData = %h", pc, adr, writedata);
         
-        if (cycle_count == 10) begin
+        if (cycle_count == 50) begin
             $stop;
         end
     end
