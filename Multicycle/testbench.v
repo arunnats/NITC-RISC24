@@ -37,14 +37,12 @@ module testbench();
     always @(posedge clk) begin
         cycle_count = cycle_count + 1;
         $display("Cycle %0d:", cycle_count);
-        $display("Current State: %s", get_state_name(state));
-        $display("Register Values:");
+        $display("FSM State: %s", get_state_name(state));
         $display("r0 = %h, r1 = %h, r2 = %h, r3 = %h", r0, r1, r2, r3);
         $display("r4 = %h, r5 = %h, r6 = %h, r7 = %h", r4, r5, r6, r7);
         $display("PC = %h, ADR = %h, WriteData = %h", pc, adr, writedata);
         
-        if (cycle_count == 30) begin
-            $display("Simulation ended after 30 cycles.");
+        if (cycle_count == 10) begin
             $stop;
         end
     end

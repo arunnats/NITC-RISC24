@@ -27,11 +27,17 @@ module regfile(input clk,
 	//we write for all opcodes, except when (adc and c !=1 or ndz and z!=1)
 	//after we have written in, then we can change the value of C and Z
 	
-	// initial begin
-	// 	r0 = 16'b0000000000000000;
-	// 	r1 = 16'b0000000000000001;
-	// 	r2 = 16'b0000000000000010;	 
-	// end
+	initial begin
+		rf[0] = 16'b0000000000000000; // pc, will be updated
+		rf[1] = 16'b0000000000000001;
+		rf[2] = 16'b0000000000000010; 
+		// rf[3] = 16'b0000000000000011; 	
+		// rf[4] = 16'b0000000000000100; 
+		// rf[5] = 16'b0000000000000101; 
+		// rf[6] = 16'b0000000000000110;
+		// rf[7] = 16'b0000000000000111; 
+	end
+
 
 	always @(posedge clk)
 		begin
