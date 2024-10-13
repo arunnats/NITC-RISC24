@@ -5,7 +5,7 @@ module controller(input clk, reset,
 						output alusrca, iord, memtoreg, regdst,
 						output [1:0] alusrcb,
 						output [1:0] pcsrc,
-						output [1:0] alucontrol,
+						output [2:0] alucontrol,
 						output [4:0] state);
 	wire branch, pcwrite;
 	//main decoder and alu decoder

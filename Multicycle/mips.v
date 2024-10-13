@@ -9,7 +9,7 @@ module  mips(input clk, reset,
 	wire zero, pcen, irwrite, regwrite, alusrca, iord, memtoreg, regdst;
 	wire [1:0] alusrcb;
 	wire [1:0] pcsrc;
-	wire [1:0] alucontrol;
+	wire [2:0] alucontrol;
 	wire [3:0] op;
 	wire compare;
 	controller c(clk, reset, op, compare, pcen, memwrite, irwrite, regwrite, alusrca, iord, memtoreg, regdst, alusrcb, pcsrc, alucontrol,state);

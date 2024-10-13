@@ -1,5 +1,5 @@
 module regfile(input clk,
-					input pc,
+					input [15:0]pc,
 					input [1:0]IR_CZ,
 					input [2:0]F,
 					input inc,inz,
@@ -27,11 +27,11 @@ module regfile(input clk,
 	//we write for all opcodes, except when (adc and c !=1 or ndz and z!=1)
 	//after we have written in, then we can change the value of C and Z
 	
-	initial begin
-		assign r0 = 16'b0000000000000000;
-		assign r1 = 16'b0000000000000001;
-		assign r2 = 16'b0000000000000010;	 
-	end
+	// initial begin
+	// 	r0 = 16'b0000000000000000;
+	// 	r1 = 16'b0000000000000001;
+	// 	r2 = 16'b0000000000000010;	 
+	// end
 
 	always @(posedge clk)
 		begin
